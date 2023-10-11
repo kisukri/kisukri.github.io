@@ -180,17 +180,14 @@
         /* 共享的基本样式 */
         body {
             font-size: 18px;
-            text-align: center; /* 将文本居中对齐 */
+            text-align: center;
+            margin-left: 25ch; /* 整体向右移动二十五个字母距离 */
         }
 
-        h1 {
+        h1, h2 {
             font-size: 25px;
             font-weight: bold;
-        }
-
-        h2 {
-            font-size: 22px;
-            font-weight: bold;
+            text-align: left;
         }
 
         strong {
@@ -199,9 +196,9 @@
         }
 
         p {
-            list-style-position: inside;
-            text-align: justify;
-            text-indent: 2em;
+            text-align: left;
+            text-indent: 0;
+            margin-left: 0;
         }
 
         /* 自适应样式 */
@@ -213,13 +210,14 @@
 
             h2 {
                 font-size: 18px;
-                margin-left: 0; /* 取消左侧的外边距 */
-                text-align: left; /* 左对齐小标题 */
+                margin-left: 20ch; /* 将小标题移动到最终的间距位置 */
+                display: block;
+                margin-bottom: 10px;
             }
 
             p {
-                text-align: left; /* 左对齐内容 */
-                text-indent: 0; /* 取消首行缩进 */
+                text-align: left;
+                text-indent: 0;
             }
         }
 
@@ -227,17 +225,19 @@
             /* 电脑设备样式 */
             h1 {
                 font-size: 30px;
+                text-align: left;
             }
 
             h2 {
                 font-size: 24px;
-                margin-left: 0; /* 取消左侧的外边距 */
-                text-align: left; /* 左对齐小标题 */
+                margin-left: 20ch; /* 将小标题移动到最终的间距位置 */
+                display: block;
+                margin-bottom: 10px;
             }
 
             p {
-                text-align: left; /* 左对齐内容 */
-                text-indent: 0; /* 取消首行缩进 */
+                text-align: left;
+                text-indent: 0;
             }
         }
     </style>
