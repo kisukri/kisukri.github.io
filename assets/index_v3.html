@@ -173,13 +173,13 @@
 
 
 <!DOCTYPE html>
-<html>
+<html> /* Alueの防盗链 */
 <head>
     <title>网站跳转</title>
     <style>
         body {
-            text-align: center; /* 居中对齐文本 */
-            font-size: 16px; /* 整体字号 */
+            text-align: left; /* 将文本左对齐 */
+            font-size: 18px; /* 整体字号 */
         }
 
         h1 {
@@ -189,14 +189,14 @@
         }
 
         h2 {
-            font-size: 19px; /* 小标题字号 */
+            font-size: 22px; /* 小标题字号 */
             font-weight: bold;
-            text-align: center; /* 居中对齐小标题 */
+            text-align: left; /* 左对齐小标题 */
         }
 
         strong {
             font-weight: bold;
-            font-size: 21px; /* 加粗字号 */
+            font-size: 24px; /* 加粗字号 */
         }
 
         p {
@@ -206,16 +206,13 @@
         }
 
         .warning {
+            font-size: 28px; /* 警告字号 */
+            font-weight: bold;
             color: red; /* 红色字体 */
         }
     </style>
 </head>
 <body>
-    <h1>本站由Alue制作，制作不易，请勿滥用</h1>
-    <h2 class="warning">警告：</h2>
-    <p>1. 本站仅供学习交流，请勿用于行为</p>
-    <p>2. 如作他用所承受的法律责任一概与作者无关</p>
-    <p>3. 使用即代表你同意上述观点</p>
     <h2>用法：</h2>
     <p>在上方框内输入你想到达的网站，点击 <strong>GO</strong> 即可跳转</p>
 
@@ -223,10 +220,13 @@
     <p><strong>Q：</strong>为什么Google图标下的网址换成了https://google.alue.link/？</p>
     <p><strong>A：</strong>部分情况下，由于本站流量大，Google会弹出人机验证，故换了反代Google，内容是一致的。</p>
 
+    <h2 class="warning">警告：</h2>
     <p><strong>Q：</strong>为什么比如YouTube之类的视频打不开？</p>
     <p><strong>A：</strong>因为本站的特殊性，速度降低较严重，无法加载部分网站的视频。</p>
 
     <p><strong>Q：</strong>我用这个网页浏览境外网站属于翻墙吗？会被抓吗？</p>
     <p><strong>A：</strong>由于本网站使用了CloudFlare+GitHub Pages，通俗一点就是把网页的内容完完全全搬运过来，再让中国大陆境内可以观看，所以并不属于翻墙。</p>
+
+    <h1>本站由Alue制作，制作不易，请勿滥用</h1>
 </body>
 </html>
