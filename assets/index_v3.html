@@ -180,12 +180,12 @@
         /* 共享的基本样式 */
         body {
             font-size: 18px;
+            text-align: center; /* 将文本居中对齐 */
         }
 
         h1 {
             font-size: 25px;
             font-weight: bold;
-            text-align: center;
         }
 
         h2 {
@@ -227,22 +227,19 @@
 
         @media (min-width: 769px) {
             /* 电脑设备样式 */
-            body {
-                text-align: center;
-            }
-
             h1 {
                 font-size: 30px;
             }
 
             h2 {
                 font-size: 24px;
-                text-align: center;
+                text-align: left;
+                margin-left: 3ch; /* 往右移动三个字母距离 */
             }
 
             p {
                 text-align: left;
-                margin-left: 20%;
+                margin-left: 3ch; /* 往右移动三个字母距离 */
                 text-indent: 0;
             }
         }
