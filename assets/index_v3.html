@@ -184,7 +184,13 @@
             margin-left: 25ch; /* 整体向右移动二十五个字母距离 */
         }
 
-        h1, h2 {
+        h1 {
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center; /* 修改为居中对齐 */
+        }
+
+        h2 {
             font-size: 25px;
             font-weight: bold;
             text-align: left;
@@ -225,13 +231,13 @@
             /* 电脑设备样式 */
             h1 {
                 font-size: 30px;
-                text-align: left;
+                text-align: center; /* 修改为居中对齐 */
             }
 
             h2 {
-                font-size: 24px;
-                margin-left: 20ch; /* 将小标题移动到最终的间距位置 */
-                display: block;
+                font-size: 25px;
+                text-align: left;
+                margin-left: 0;
                 margin-bottom: 10px;
             }
 
@@ -239,6 +245,10 @@
                 text-align: left;
                 text-indent: 0;
             }
+        }
+        
+        .warning {
+            color: red;
         }
     </style>
 </head>
