@@ -178,35 +178,41 @@
     <title>网站跳转</title>
     <style>
         body {
-            text-align: center; /* Center align the text */
+            text-align: center; /* 居中对齐文本 */
+            font-size: 16px; /* 整体字号 */
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 25px; /* 标题字号 */
             font-weight: bold;
-            text-align: center; /* Center align the title */
+            text-align: center; /* 居中对齐标题 */
         }
 
         h2 {
-            font-size: 18px;
+            font-size: 19px; /* 小标题字号 */
             font-weight: bold;
-            text-align: left; /* Left align the subtitles */
+            text-align: center; /* 居中对齐小标题 */
         }
 
         strong {
             font-weight: bold;
-            font-size: 20px;
+            font-size: 21px; /* 加粗字号 */
         }
 
         p {
-            list-style-position: inside; /* Indent the paragraphs */
-            text-align: left; /* Left align the paragraphs */
+            list-style-position: inside; /* 段落内数字对齐 */
+            text-align: justify; /* 两端对齐段落 */
+            text-indent: 2em; /* 首行缩进两个字符 */
+        }
+
+        .warning {
+            color: red; /* 红色字体 */
         }
     </style>
 </head>
 <body>
     <h1>本站由Alue制作，制作不易，请勿滥用</h1>
-    <h2>警告：</h2>
+    <h2 class="warning">警告：</h2>
     <p>1. 本站仅供学习交流，请勿用于行为</p>
     <p>2. 如作他用所承受的法律责任一概与作者无关</p>
     <p>3. 使用即代表你同意上述观点</p>
