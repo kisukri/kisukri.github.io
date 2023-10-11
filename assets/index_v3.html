@@ -191,7 +191,6 @@
         h2 {
             font-size: 22px;
             font-weight: bold;
-            text-align: left;
         }
 
         strong {
@@ -214,14 +213,13 @@
 
             h2 {
                 font-size: 18px;
-            }
-
-            strong {
-                font-size: 20px;
+                margin-left: 0; /* 取消左侧的外边距 */
+                text-align: left; /* 左对齐小标题 */
             }
 
             p {
-                font-size: 16px;
+                text-align: left; /* 左对齐内容 */
+                text-indent: 0; /* 取消首行缩进 */
             }
         }
 
@@ -233,14 +231,13 @@
 
             h2 {
                 font-size: 24px;
-                text-align: left;
-                margin-left: 3ch; /* 往右移动三个字母距离 */
+                margin-left: 0; /* 取消左侧的外边距 */
+                text-align: left; /* 左对齐小标题 */
             }
 
             p {
-                text-align: left;
-                margin-left: 3ch; /* 往右移动三个字母距离 */
-                text-indent: 0;
+                text-align: left; /* 左对齐内容 */
+                text-indent: 0; /* 取消首行缩进 */
             }
         }
     </style>
