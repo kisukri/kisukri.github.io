@@ -177,59 +177,88 @@
 <head>
     <title>网站跳转</title>
     <style>
+        /* 共享的基本样式 */
         body {
-            text-align: left; /* 将文本左对齐 */
-            font-size: 18px; /* 整体字号 */
+            font-size: 18px;
         }
 
         h1 {
-            font-size: 25px; /* 标题字号 */
+            font-size: 25px;
             font-weight: bold;
-            text-align: center; /* 居中对齐标题 */
+            text-align: center;
         }
 
         h2 {
-            font-size: 22px; /* 小标题字号 */
+            font-size: 22px;
             font-weight: bold;
-            text-align: left; /* 左对齐小标题 */
+            text-align: left;
         }
 
         strong {
             font-weight: bold;
-            font-size: 24px; /* 加粗字号 */
+            font-size: 24px;
         }
 
         p {
-            list-style-position: inside; /* 段落内数字对齐 */
-            text-align: justify; /* 两端对齐段落 */
-            text-indent: 2em; /* 首行缩进两个字符 */
+            list-style-position: inside;
+            text-align: justify;
+            text-indent: 2em;
         }
 
-        .warning {
-            font-size: 28px; /* 警告字号 */
-            font-weight: bold;
-            color: red; /* 红色字体 */
+        /* 自适应样式 */
+        @media (max-width: 768px) {
+            /* 手机设备样式 */
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            strong {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            /* 电脑设备样式 */
+            body {
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            p {
+                text-align: left;
+                margin-left: 20%;
+                text-indent: 0;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>   </h1>
-    <h1>   </h1>
     <h1>本站由Alue制作，制作不易，请勿滥用</h1>
-    <h1>   </h1>
     <h2>用法：</h2>
-    <p>在上方框内输入你想到达的网站，点击<strong>GO</strong>即可跳转</p>
-    <h1>   </h1>
+    <p>在上方框内输入需要的网站，点击<strong>GO</strong>即可跳转</p>
     <h2>Q&A：</h2>
     <p><strong>Q：</strong>为什么Google图标下的网址换成了https://google.alue.link/？</p>
     <p><strong>A：</strong>部分情况下，由于本站流量大，Google会弹出人机验证，故换了反代Google，内容是一致的。</p>
-    <h1>   </h1>
     <p><strong>Q：</strong>为什么比如YouTube之类的视频打不开？</p>
     <p><strong>A：</strong>因为本站的特殊性，速度降低较严重，无法加载部分网站的视频。</p>
-    <h1>   </h1>
     <p><strong>Q：</strong>我用这个网页浏览境外网站属于翻墙吗？会被抓吗？</p>
     <p><strong>A：</strong>由于本网站使用了CloudFlare+GitHub Pages，通俗一点就是把网页的内容完完全全搬运过来，再让中国大陆境内可以观看，所以并不属于翻墙。</p>
-    <h1>   </h1>
     <h2 class="warning">警告：</h2>
     <p>1. 本站仅供学习交流，请勿用于行为</p>
     <p>2. 如作他用所承受的法律责任一概与作者无关</p>
